@@ -34,7 +34,8 @@ var education = {
             "minors": [
                 "Quality Assurance"
             ],
-            "dates": 2005
+            "dates": 2005,
+            "url": "http://uni.sze.hu/en_GB/home"
         }
     ],
     "OnlineClasses": [
@@ -75,6 +76,7 @@ var work = {
     "jobs": [
         {
             "employer": "Zimmer - Biomet",
+            "url": "http://www.zimmer.com/medical-professionals/products/knee.html",
             "location": "Shannon, Ireland",
             "position": "Product Builder",
             "dates": "2010 - 2015",
@@ -83,6 +85,7 @@ var work = {
         },
         {
             "employer": "JEA",
+            "url": "http://www.jea.ie/",
             "location": "Dublin, Ireland",
             "position": "Production/Design Engineer",
             "dates": "2009",
@@ -93,6 +96,7 @@ var work = {
         },
         {
             "employer": "Sumitomo Electric Industries, Ltd.",
+            "url": "http://global-sei.com/index.html",
             "location": "Alattyan, Hungary",
             "position": "Design Engineer/System Administrator",
             "dates": "2001 - 2006",
@@ -152,8 +156,8 @@ var projects = {
         "images/Asteroid.png",
         "images/Asteroid2.png"
         ],
-        "live_link": "http://www.codeskulptor.org/#user40_gSsssaJVoj_11.py",
-        "source_code_link": "http://www.codeskulptor.org/#user40_gSsssaJVoj_11.py"
+        "live_link": "http://www.codeskulptor.org/#user40_VcUZGPuxbtBifOB.py",
+        "source_code_link": "http://www.codeskulptor.org/#user40_VcUZGPuxbtBifOB.py"
         }
     ]
 }
@@ -179,7 +183,8 @@ work.display = function(order){
     work.jobs = work.jobs.reverse();
     for (job in work.jobs) {
         $("#workExperience").append(HTMLworkStart);
-        var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+        var url = HTMLworkEmployer.replace("#", work.jobs[job].url);
+        var formattedEmployer = url.replace("%data%", work.jobs[job].employer);
         var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].position);
         var formattedEmployerTitle = formattedEmployer + formattedTitle;
         $(".work-entry:last").append(formattedEmployerTitle);
@@ -191,8 +196,9 @@ work.display = function(order){
 
 projects.display = function(){
     for (project in projects.projects){
+        var url = HTMLprojectTitle.replace("#", projects.projects[project].live_link)
         $("#projects").append(HTMLprojectStart);
-        $(".project-entry:last").append(HTMLprojectTitle.replace("%data%", projects.projects[project].title));
+        $(".project-entry:last").append(url.replace("%data%", projects.projects[project].title));
         $(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[project].dates));
         $(".project-entry:last").append(HTMLprojectDescription.replace("%data%", projects.projects[project].description));
         for (img in projects.projects[project].images){
@@ -205,7 +211,8 @@ projects.display = function(){
 education.display = function(){
     for (school in education.schools){
         $("#education").append(HTMLschoolStart);
-        var title = HTMLschoolName.replace("%data%", education.schools[school].name) + HTMLschoolDegree.replace("%data%", education.schools[school].degree)
+        var url = HTMLschoolName.replace("#", education.schools[school].url)
+        var title = url.replace("%data%", education.schools[school].name) + HTMLschoolDegree.replace("%data%", education.schools[school].degree)
         $(".education-entry:last").append(title);
         $(".education-entry:last").append(HTMLschoolDates.replace("%data%", education.schools[school].dates));
         $(".education-entry:last").append(HTMLschoolLocation.replace("%data%", education.schools[school].location));
