@@ -1,6 +1,5 @@
 /*
 
-<<<<<<< HEAD
 This file contains all of the code running in the background that makes resumeBuilder.js possible.
 
 */
@@ -8,19 +7,6 @@ This file contains all of the code running in the background that makes resumeBu
 /*
 These are Template HTML strings.
 Replacing the %data% placeholder text using JavaScript functions to modify the DOM.
-=======
-This file contains all of the code running in the background that makes resumeBuilder.js possible. We call these helper functions because they support your code in this course.
-
-Don't worry, you'll learn what's going on in this file throughout the course. You won't need to make any changes to it until you start experimenting with inserting a Google Map in Problem Set 3.
-
-Cameron Pittman
-*/
-
-
-/*
-These are HTML strings. As part of the course, you'll be using JavaScript functions
-replace the %data% placeholder text you see in them.
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
 var HTMLheaderRole = '<span>%data%</span><hr/>';
@@ -34,47 +20,30 @@ var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
-<<<<<<< HEAD
 var HTMLWelcomeMsg = '<div class="welcome-message">%data%</div>';
-=======
-var HTMLWelcomeMsg = '<span class="welcome-message">%data%</span>';
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 
 var HTMLskillsStart = '<h3 id="skillsH3">I&apos;m good with these:</h3><ul id="skills" class="flex-box"></ul>';
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-<<<<<<< HEAD
 var HTMLworkEmployer = '<a href="#" target="_blank">%data%';
-=======
-var HTMLworkEmployer = '<a href="#">%data%';
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-<<<<<<< HEAD
 var HTMLprojectTitle = '<a href="#" target="_blank">%data%</a>';
-=======
-var HTMLprojectTitle = '<a href="#">%data%</a>';
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-<<<<<<< HEAD
 var HTMLschoolName = '<a href="#" target="_blank">%data%';
-=======
-var HTMLschoolName = '<a href="#">%data%';
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 var HTMLschoolDegree = ' - %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
-<<<<<<< HEAD
 var HTMLschoolMinor = '<em><br>Minor: %data%</em>';
 
 var HTMLonlineClasses = '<h3 class="onlineCourse">Online Classes</h3>';
@@ -83,36 +52,10 @@ var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineDescription = '<br><p>%data%</p>';
 
-=======
-//var HTMLschoolMinor = '<em><br>Minor: %data%</em>';
-
-var HTMLonlineClasses = '<h3 class="onlineCourse">Online Classes</h3>';
-var HTMLonlineTitle = '<a href="%url%">%data%</a>';
-var HTMLonlineSchool = '<a href="#">%data%';
-var HTMLOnlineDegree = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
-var HTMLonlineURL = '<br><a href="%url%">Link</a>';
-
-//var internationalizeButton = '<button id="inName">Internationalize</button>';
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 var googleMap = '<div id="map"></div>';
 var earliestButton = '<button id="sort-button">%data%</button>';
 
 
-<<<<<<< HEAD
-=======
-/*
-The International Name challenge in Lesson 2 where you'll create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
-*/
-
-$(document).ready(function() {
-  $('#inName').click(function() {
-    var iName = inName($('#name').html()) || function(){};
-    $('#name').html(iName);
-  });
-});
-
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 $(document).ready(function() {
   $('#sort-button').click(function() {
     var rep = swap($('#sort-button').html());
@@ -122,44 +65,14 @@ $(document).ready(function() {
   });
 });
 
-<<<<<<< HEAD
 
 /*
 Generate the custom Google Map for the website.
-=======
-/*
-The next few lines about clicks are for the Collecting Click Locations quiz in Lesson 2.
-*/
-clickLocations = [];
-
-function logClicks(x,y) {
-  clickLocations.push(
-    {
-      x: x,
-      y: y
-    }
-  );
-  console.log('x location: ' + x + '; y location: ' + y);
-}
-
-$(document).click(function(loc) {
-  var x = loc.pageX;
-  var y = loc.pageY;
-  logClicks(x, y);
-});
-
-/*
-This is the fun part. Here's where we generate the custom Google Map for the website.
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 See the documentation below for more details.
 https://developers.google.com/maps/documentation/javascript/reference
 */
 var map;    // declares a global map variable
 
-<<<<<<< HEAD
-=======
-
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 /*
 Start here! initializeMap() is called when page is loaded.
 */
@@ -168,12 +81,8 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-<<<<<<< HEAD
     disableDefaultUI: true,
     minZoom: 2
-=======
-    disableDefaultUI: true
->>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
   };
 
   // This next line makes `map` a new Google Map JavaScript Object and attaches it to
