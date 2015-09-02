@@ -25,7 +25,11 @@ hr {
 h1 {
   font-size: 38px;
   font-weight: 800;
+<<<<<<< HEAD
   color: #dfe3ee;
+=======
+  color: #FFE040;
+>>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
   line-height: 48px;
   display: inline;
 }
@@ -53,7 +57,11 @@ h4 {
   line-height: 17px;
 }
 
+<<<<<<< HEAD
 h2, h4, h5 {
+=======
+h2, h3, h4, h5 {
+>>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
   margin: 10px;
   padding-left: 5%;
   padding-right: 5%;
@@ -88,7 +96,11 @@ p {
 
 a {
   text-decoration: none;
+<<<<<<< HEAD
   margin-top: 15px;
+=======
+  margin-top: 10px;
+>>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
   display: block;
   color: #4A95C4;
   font-weight: 600;
@@ -97,10 +109,17 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 26px;
+<<<<<<< HEAD
   color: #dfe3ee;
   line-height: 28px;
   margin-left: 10px;
   line-height: 30px;
+=======
+  color: #F3F3F3;
+  line-height: 28px;
+  margin-left: 10px;
+  line-height: 60px;
+>>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 }
 
 #skillsH3 {
@@ -167,8 +186,13 @@ li {
   width: 150px;
   height: 150px;
   display: none;
+<<<<<<< HEAD
   border-radius: 50%;
   box-shadow: 5px 5px 2px black;
+=======
+  border-radius: 8%;
+  box-shadow: 10px 10px 5px black;
+>>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
   margin-right: 30px;
 }
 
@@ -204,7 +228,11 @@ img {
     max-height:500px;
 }
 span {
+<<<<<<< HEAD
   color: #eeba30;
+=======
+  color: #66b3ff;
+>>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
   padding: 5px;
 }
 

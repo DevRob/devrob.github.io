@@ -12,12 +12,15 @@
  * Date: 2013-07-03T13:30Z
  */
 (function( window, undefined ) {
+<<<<<<< HEAD
 
 // Can't do this because several apps including ASP.NET trace
 // the stack via arguments.caller.callee and Firefox dies if
 // you try to trace through "use strict" call chains. (#13335)
 // Support: Firefox 18+
 //"use strict";
+=======
+>>>>>>> c89e874a44e552a56d5609bb32d40da31a8a0667
 var
   // A central reference to the root jQuery(document)
   rootjQuery,
