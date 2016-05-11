@@ -12,7 +12,7 @@ var bio = {
     },
     "picture" : "images/portrait.jpg",
     "welcome_msg" : "Junior Web Developer with hands-on experience in software development. \
-    Specialized in building client-side application using HTML, CSS, Javascript and Responsive Web \
+    Specialized in client-side application using HTML, CSS, Javascript and Responsive Web \
     Design techniques. Substantial experience with Google Maps API, HTML document manipulation \
     with JQuery and data-binding with knockout.js. Familiar with  Bootstrap, Git/GitHub, node.js and gulp.   ",
     "skills" : ["Javascript", "HTML/CSS", "Bootstrap", "Python", "GitHub", "AutoCAD"]
@@ -156,7 +156,7 @@ var projects = {
                         The algorithm calculate all the possible moves available for the computer player and\
                         use some metric to determine the best possible move. I used Jasmin.js and Test Driven Development technique for this project.",
         "images" : [
-        "images/ttt.jpg", "images/ttt2.jpg"
+        "images/jasmine.png", "images/ttt.jpg", "images/ttt2.jpg"
         ],
         "live_link": "http://devrob.github.io/TDD-Project-TTT",
         "source_code_link": "https://github.com/DevRob/TDD-Project-TTT"
