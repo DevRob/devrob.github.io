@@ -1,9 +1,4 @@
-/*
 
-This file contains all the information abouut me. If I want to change something or add more project, education or work experience,
-I just need to edit these JSONs and the website update itself dynamically.
-
-*/
 
 var bio = {
     // Bio with name, role, contacts, picture welcome msg and skills
@@ -205,12 +200,12 @@ var projects = {
       "description": "In this project I built a Tic-Tac-Toe game, that has an unbeatable A.I. player. \
                       The goal was to use Minimax Algorithm for decision making, so it's going to pick the best moves. \
                       The algorithm calculate all the possible moves available for the computer player and\
-                      use some metric to determine the best possible move.",
+                      use some metric to determine the best possible move. I used Jasmin.js and Test Driven Development technique for this project.",
       "images" : [
       "images/ttt.jpg"
       ],
-      "live_link": "http://devrob.github.io/invincibleTTT",
-      "source_code_link": "https://github.com/DevRob/invincibleTTT/tree/master/Dev"
+      "live_link": "http://devrob.github.io/TDD-Project-TTT",
+      "source_code_link": "https://github.com/DevRob/TDD-Project-TTT"
     }
 
     ]
