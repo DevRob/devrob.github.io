@@ -149,6 +149,20 @@ var projects = {
         },
 
         {
+        "title": "Unbeatable Tic-Tac-Toe",
+        "dates": 2015,
+        "description": "In this project I built a Tic-Tac-Toe game, that has an unbeatable A.I. player. \
+                        The goal was to use Minimax Algorithm for decision making, so it's going to pick the best moves. \
+                        The algorithm calculate all the possible moves available for the computer player and\
+                        use some metric to determine the best possible move. I used Jasmin.js and Test Driven Development technique for this project.",
+        "images" : [
+        "images/ttt.jpg", "images/ttt2.jpg"
+        ],
+        "live_link": "http://devrob.github.io/TDD-Project-TTT",
+        "source_code_link": "https://github.com/DevRob/TDD-Project-TTT"
+      },
+
+        {
         "title": "Feed Reader Testing",
         "dates": 2015,
         "description": "In this project I'm testing with Jasmine Javascript Library. Testing is an important part of\
@@ -192,22 +206,7 @@ var projects = {
         ],
         "live_link": "http://www.codeskulptor.org/#user40_VcUZGPuxbtBifOB.py",
         "source_code_link": "http://www.codeskulptor.org/#user40_VcUZGPuxbtBifOB.py"
-      },
-
-      {
-      "title": "Unbeatable Tic-Tac-Toe",
-      "dates": 2015,
-      "description": "In this project I built a Tic-Tac-Toe game, that has an unbeatable A.I. player. \
-                      The goal was to use Minimax Algorithm for decision making, so it's going to pick the best moves. \
-                      The algorithm calculate all the possible moves available for the computer player and\
-                      use some metric to determine the best possible move. I used Jasmin.js and Test Driven Development technique for this project.",
-      "images" : [
-      "images/ttt.jpg"
-      ],
-      "live_link": "http://devrob.github.io/TDD-Project-TTT",
-      "source_code_link": "https://github.com/DevRob/TDD-Project-TTT"
-    }
-
+      }
     ]
 }
 
