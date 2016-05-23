@@ -127,8 +127,6 @@ var work = {
     ]
 }
 
-work.jobs = work.jobs.reverse();
-
 var projects = {
     // Projects I worked on I found worth to mention.
     "projects": [
@@ -143,8 +141,8 @@ var projects = {
         "images" : [
         "images/map.jpg", "images/map2.jpg", "images/map3.jpg"
         ],
-        "live_link": "http://devrob.github.io/Udacity-WebDev-project5/",
-        "source_code_link": "https://github.com/DevRob/Udacity-WebDev-project5"
+        "live_link": "http://devrob.github.io/Places-APP/",
+        "source_code_link": "https://github.com/DevRob/Places-APP"
 
         },
 
@@ -209,6 +207,8 @@ var projects = {
       }
     ]
 }
+
+work.jobs = work.jobs.reverse();
 
 bio.display = function() {
     $("#header-row1").append(HTMLheaderRole.replace("%data%", bio.role));
