@@ -11,10 +11,10 @@ var bio = {
     "location" : "Limerick, Ireland",
     },
     "picture" : "images/portrait.jpg",
-    "welcome_msg" : "Junior Web Developer with hands-on experience in software development. \
-    Specialized in client-side application using HTML, CSS, Javascript and Responsive Web \
-    Design techniques. Substantial experience with Google Maps API, HTML document manipulation \
-    with JQuery and data-binding with knockout.js. Familiar with  Bootstrap, Git/GitHub, node.js and gulp.   ",
+    "welcome_msg" : "Junior Web Developer experienced with object-oriented and functional programming languages. \
+                    Specialized in client-side application using HTML, CSS, Javascript and Responsive Web Design \
+                    techniques. Substantial experience with Google Maps API, JQuery and data-binding with knockout.js. \
+                    Fast learner and open to using new technologies and frameworks.",
     "skills" : ["Javascript", "HTML/CSS", "Bootstrap", "Python", "GitHub", "AutoCAD"]
 }
 
