@@ -119,7 +119,7 @@ var work = {
             "position": "Design Engineer/System Administrator",
             "dates": "2001 - 2006",
             "description": "ONLINE ORDERING SYSTEM. \
-                            Leader of a project that opened an online window for the customers to our production\
+                            A project that opened an online window for the customers to our production\
                             They can place order, quotation-, sample-request and get access to production schedule online."
         }
     ]
