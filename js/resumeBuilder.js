@@ -110,8 +110,7 @@ var work = {
             "dates": "2009",
             "description": "AUTOMATED DESIGN SYSTEM. \
                             Developed an automated design system that generates blueprints and CNC Program\
-                            Using AutoLisp and CNC Programming tools I reduced the design process from 3-4 hours to 15 min.\
-                            Product Design /AutoCAD/, CNC Programming, Specifications, Quotations"
+                            Using AutoLisp and CNC Programming tools I reduced the design process from 3-4 hours to 15 min."
         },
         {
             "employer": "Sumitomo Electric Industries, Ltd.",
@@ -121,8 +120,7 @@ var work = {
             "dates": "2001 - 2006",
             "description": "ONLINE ORDERING SYSTEM. \
                             Leader of a project that opened an online window for the customers to our production\
-                            They can place order, quotation-, sample-request and get access to production schedule online\
-                            Product Design /AutoCAD, Pro/ENGINEER/, Specifications, Quotations"
+                            They can place order, quotation-, sample-request and get access to production schedule online."
         }
     ]
 }
