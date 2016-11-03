@@ -3,7 +3,7 @@
 var bio = {
     // Bio with name, role, contacts, picture welcome msg and skills
     "name" : "Robert Molnar",
-    "role" : "Web Developer",
+    "role" : "Software Developer",
     "contacts" : {
     "mobile" : "+ 353 87 925 6846",
     "email" : "mail.robertmolnar@gmail.com",
@@ -11,11 +11,11 @@ var bio = {
     "location" : "Limerick, Ireland",
     },
     "picture" : "images/portrait.jpg",
-    "welcome_msg" : "Junior Web Developer experienced with object-oriented and functional programming languages. \
-                    Specialized in client-side application using HTML, CSS, Javascript and Responsive Web Design \
-                    techniques. Substantial experience with Google Maps API, JQuery and data-binding with knockout.js. \
-                    Fast learner and open to using new technologies and frameworks.",
-    "skills" : ["Javascript", "HTML/CSS", "Bootstrap", "Python", "GitHub", "AutoCAD"]
+    "welcome_msg" : "Software Developer experienced with object-oriented and functional programming languages. \
+                    Experienced with server and client side application using HTML, CSS, Javascript, .NET, MySQL. \
+                    Familiar with Responsive Web Design techniques, Google Maps API, JQuery and data-binding with knockout.js. \
+                    Highly value re-usable, maintenable, self-documenting code. Fast learner and open to using new technologies and frameworks.",
+    "skills" : ["Javascript", "HTML/CSS", "knockout.js", "Python", "MySQL", "C#", "Git"]
 }
 
 var education = {
@@ -51,10 +51,10 @@ var education = {
             "logos": ["images/Rice.jpg", "images/coursera.png"],
             "dates": 2015,
             "url": "https://www.coursera.org/specialization/fundamentalscomputing2/37?utm_medium=spark_cdp_sidebar",
-            "description":"This series introduces students to the basics of analyzing and solving computational problems. \
-                          It will provide students with a solid foundation in the mathematical and programming techniques \
-                          that support creating efficient and well-designed solutions for such problems. The Specialization \
-                          concludes with a Capstone project that allows you to apply the skills you've learned throughout the courses."
+            "description":  "This Specialization covers much of the material that first-year Computer Science students take at Rice University. \
+                            Students learn sophisticated programming skills in Python from the ground up and apply these skills in building more \
+                            than 20 fun projects. The Specialization concludes with a Capstone exam that allows the students to demonstrate the \
+                            range of knowledge that they have acquired in the Specialization."
         },
         {
             "course": "Machine Learning",
@@ -72,6 +72,16 @@ var education = {
 var work = {
     // Work experience section.
     "jobs": [
+        {
+            "employer": "Goodside Business Solutions",
+            "url": "http://www.goodside.ie/",
+            "location": "Galway, Ireland",
+            "position": "Software Developer Intern",
+            "dates": "2016 -",
+            "description": "End-to-end feature development for custom ERP system using JavaScript, CSS, HTML \
+                            front-end, .NET rules engine project and MySQL with complex stored procedures and \
+                            transaction. We use GIT and bitbucket for version control."
+        },
         {
             "employer": "Udacity",
             "url": "https://www.udacity.com",
@@ -113,6 +123,16 @@ var work = {
                             Using AutoLisp and CNC Programming tools I reduced the design process from 3-4 hours to 15 min."
         },
         {
+            "employer": "NNG Construction Ltd.",
+            "url": "N/A",
+            "location": "Budapest, Hungary",
+            "position": "Project Manager",
+            "dates": "2006 - 2009",
+            "description": "Plan, budget, oversee and document all aspects of the specific project. Make sure \
+                            that the scope and direction of each project are on schedule. Provide technical support \
+                            for the production team. Negotiate with and hire subcontractors."
+        },
+        {
             "employer": "Sumitomo Electric Industries, Ltd.",
             "url": "http://global-sei.com/index.html",
             "location": "Alattyan, Hungary",
@@ -129,6 +149,16 @@ var projects = {
     // Projects I worked on I found worth to mention.
     "projects": [
         {
+        "title": "Automated Email Feature for ERP System",
+        "dates": 2016,
+        "description": "Rework the old system so fellow developers can easily set up  different types of automated email \
+                        messages such as order confirmation, notification about stock level or scheduled dispatch, periodic \
+                        reports, special offers for customers. ",
+        "images" : ["images/JS.png", "images/MySQL.png", "images/cSharp.png"],
+        "live_link": "N/A",
+        "source_code_link": "Confidental"
+        },
+        {
         "title": "Neighborhood Map",
         "dates": 2015,
         "description": "Develop a single-page application featuring a map of your neighborhood or a neighborhood you would like to visit.\
@@ -141,7 +171,6 @@ var projects = {
         ],
         "live_link": "http://devrob.github.io/Places-APP/",
         "source_code_link": "https://github.com/DevRob/Places-APP"
-
         },
 
         {
@@ -171,7 +200,6 @@ var projects = {
         ],
         "live_link": "http://devrob.github.io/Udacity-WebDev-project6/",
         "source_code_link": "https://github.com/DevRob/Udacity-WebDev-project6"
-
         },
 
         {
@@ -186,7 +214,6 @@ var projects = {
         ],
         "live_link": "http://devrob.github.io/Udacity-WebDev-project3/",
         "source_code_link": "https://github.com/DevRob/Udacity-WebDev-project3"
-
         },
 
         {
@@ -209,16 +236,16 @@ var projects = {
 work.jobs = work.jobs.reverse();
 
 bio.display = function() {
-    $("#header-row1").append(HTMLheaderRole.replace("%data%", bio.role));
-    $("#header-row1").prepend(HTMLheaderName.replace("%data%", bio.name));
+    $("#role").append(HTMLheaderRole.replace("%data%", bio.role));
+    $("#name").prepend(HTMLheaderName.replace("%data%", bio.name));
     for (contact in bio.contacts){
         var data = HTMLcontactGeneric.replace("%data%", bio.contacts[contact]);
         var type = data.replace("%contact%", contact);
         $("#topContacts").append(type);
         $("#footerContacts").append(type);
     }
-    $("#left-header").append(HTMLbioPic.replace("%data%", bio.picture));
-    $("#left-header").append(HTMLskillsStart);
+    $("#biopic").append(HTMLbioPic.replace("%data%", bio.picture));
+    $("#skills").append(HTMLskillsStart);
     for (skill in bio.skills) {
         $("#skillsH3").append(HTMLskills.replace("%data%", bio.skills[skill]));
     }
