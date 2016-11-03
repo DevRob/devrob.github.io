@@ -7,52 +7,51 @@
   <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
   <script src="js/jQuery.js"></script>
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
-
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  <div id="main">
+  <main id="main">
     <!-- ul tag for the top contacts -->
     <ul id="topContacts" class='flex-box'></ul>
-  <div id="header" class="center-content clearfix">
+  <header id="header" class="center-content clearfix">
     <div id="header-row1" class='row'>
-      <div id="role" class="col-md-10"></div>
+      <span id="role" class="col-md-10"></span>
     </div>
-    <div id="header-row2" class='row'>
-      <div id="header-left" class="col-md-2">
-        <div id="biopic"></div>
-        <div id="name"></div>
-      </div>
-      <div id="skills" class="col-md-2"></div>
-      <div id="right-header" class="col-md-8"></div>
-    </div>
-  </div>
-  <div class='container'>
+    <section id="header-row2" class='row'>
+      <header id="header-left" class="col-md-2">
+        <span id="biopic"></span>
+        <span id="name"></span>
+      </header>
+      <span id="skills" class="col-md-2"></span>
+      <span id="right-header" class="col-md-8"></span>
+    </section>
+  </header>
+  <section class='container'>
     <div style='clear: both;'></div>
-    <div id="workExperience" class='gray'>
+    <article id="workExperience" class='gray'>
       <div id="workExperience-row" class="row">
-        <div id="workExperience-header" class="col-md-4">
+          <div id="workExperience-header" class="col-md-4">
           <h2>Work Experience</h2>
         </div>
         <div id="workExperience-button" class="col-md-4"></div>
       </div>
-    </div>
-    <div id="projects">
+    </article>
+    <article id="projects">
       <h2>Projects</h2>
-    </div>
-    <div id="education" class='gray'>
+    </article>
+    <article id="education" class='gray'>
       <h2>Education</h2>
-    </div>
-    <div id="mapDiv">
+    </article>
+    <section id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
-    </div>
-  </div>
+    </section>
+  </section>
     <div id="letsConnect" class='dark-gray'>
       <h2 class='orange center-text'></h2>
         <ul id="footerContacts" class="flex-box">
       </ul>
     </div>
-</div>
+</main>
   <!-- The helper.js contains Template HTML strings and JScript code to provide a Template Resume for the personal info in resumeBuilder.js -->
   <script src="js/helper.js"></script>
   <script src="js/resumeBuilder.js"></script>
