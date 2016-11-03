@@ -25,11 +25,11 @@ hr {
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 30px;
   font-weight: 800;
   color: #dfe3ee;
   line-height: 48px;
-  display: inline;
+  text-align: center;
 }
 
 h2 {
@@ -172,11 +172,11 @@ li {
   padding: 3px;
 }
 
-.biopic { 
+.biopic {
   width: 150px;
   height: 150px;
   display: none;
-  border-radius: 50%;
+  border-radius: 10%;
   box-shadow: 5px 5px 2px black;
   margin-left: auto;
   margin-right: auto;
