@@ -156,7 +156,7 @@ var projects = {
                         reports, special offers for customers. ",
         "images" : ["images/JS.png", "images/MySQL.png", "images/cSharp.png"],
         "live_link": "N/A",
-        "source_code_link": "Confidental"
+        "source_code_link": "N/A"
         },
         {
         "title": "Neighborhood Map",
@@ -268,9 +268,26 @@ work.display = function(){
 }
 
 projects.display = function(){
+
     for (project in projects.projects){
-        var url = HTMLh3Start + HTMLprojectTitle.replace("#", projects.projects[project].live_link) +
-                  HTMLprojectSourceCodeLink.replace("#", projects.projects[project].source_code_link);
+        var projectTitle = HTMLprojectTitle;
+        var projectCode = HTMLprojectSourceCodeLink;
+        var url = "";
+
+        if (projects.projects[project].live_link == "N/A") {
+          projectTitle = projectTitle.replace("_blank", "");
+        } else {
+          projectTitle = projectTitle.replace("#", projects.projects[project].live_link);
+        }
+        if (projects.projects[project].source_code_link == "N/A") {
+          projectCode = projectCode.replace("~", "none");
+        } else {
+          projectCode = projectCode.replace("#", projects.projects[project].source_code_link);
+          projectCode = projectCode.replace("~", "block");
+        }
+
+        url = HTMLh3Start + projectTitle + projectCode;
+
         $("#projects").append(HTMLprojectStart);
         $(".project-entry:last").append(url.replace("%data%", projects.projects[project].title));
         $(".project-entry:last").append(HTMLprojectDates.replace("%data%", projects.projects[project].dates));

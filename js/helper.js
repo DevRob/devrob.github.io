@@ -25,7 +25,7 @@ var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div><br><br>';
 var HTMLprojectTitle = '<a href="#" target="_blank">%data%</a>';
-var HTMLprojectSourceCodeLink = '<a style="float: right" href="#" target="_blank">source code >></a>';
+var HTMLprojectSourceCodeLink = '<a style="float: right; display: ~;" href="#" target="_blank">source code >></a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%" class="project-img">';
