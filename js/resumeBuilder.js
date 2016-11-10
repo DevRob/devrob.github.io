@@ -12,7 +12,7 @@ var bio = {
     },
     "picture" : "images/portrait.jpg",
     "welcome_msg" : "Software Developer experienced with object-oriented and functional \
-                    programming languages. Working with server and client side application \
+                    programming languages. Working with server and client side applications \
                     using HTML, CSS, Javascript, .NET, MySQL. Familiar with Responsive Web \
                     Design techniques, Google Maps API, JQuery and data-binding with knockout.js. \
                     Highly value re-usable, maintainable, self-documenting code. Fast learner and \
