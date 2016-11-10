@@ -11,10 +11,12 @@ var bio = {
     "location" : "Limerick, Ireland",
     },
     "picture" : "images/portrait.jpg",
-    "welcome_msg" : "Software Developer experienced with object-oriented and functional programming languages. \
-                    Experienced with server and client side application using HTML, CSS, Javascript, .NET, MySQL. \
-                    Familiar with Responsive Web Design techniques, Google Maps API, JQuery and data-binding with knockout.js. \
-                    Highly value re-usable, maintenable, self-documenting code. Fast learner and open to using new technologies and frameworks.",
+    "welcome_msg" : "Software Developer experienced with object-oriented and functional \
+                    programming languages. Working with server and client side application \
+                    using HTML, CSS, Javascript, .NET, MySQL. Familiar with Responsive Web \
+                    Design techniques, Google Maps API, JQuery and data-binding with knockout.js. \
+                    Highly value re-usable, maintainable, self-documenting code. Fast learner and \
+                    open to using new technologies and frameworks.",
     "skills" : ["Javascript", "HTML/CSS", "knockout.js", "Python", "MySQL", "C#", "Git"]
 }
 
