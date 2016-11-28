@@ -137,6 +137,7 @@ a {
     /*background-color: white;
     background: #484848 url("header3.jpg") no-repeat fixed center;
     background-size: cover;*/
+    overflow:hidden;
     background: #1b5288;
     background: -moz-linear-gradient(left, #1b5288 0%, #316294 28%, #698db1 100%);
     background: -webkit-gradient(left top, right top, color-stop(0%, #1b5288), color-stop(28%, #316294), color-stop(100%, #698db1));
