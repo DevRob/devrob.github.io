@@ -17,7 +17,7 @@ var bio = {
                     Design techniques, Google Maps API, JQuery and data-binding with knockout.js. \
                     Highly value re-usable, maintainable, self-documenting code. Fast learner and \
                     open to using new technologies and frameworks.",
-    "skills" : ["Javascript", "HTML/CSS", "knockout.js", "Python", "MySQL", "C#", "Git"]
+    "skills" : ["Javascript", "HTML / CSS", "knockout.js", ".NET ( C# )", "Python", "MySQL", "Git"]
 }
 
 var education = {
