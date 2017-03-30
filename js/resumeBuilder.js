@@ -154,8 +154,8 @@ var projects = {
         "title": "CSS 3D Transform",
         "dates": 2017,
         "description": "Experimenting with 3D UI design. I did not find the benefit to filling out a swiveling web form, \
-                        but it's fun to experiment with and a good coding challange",
-        "images" : ["images/3DTransform.pdn"],
+                        but it's fun to experiment with and a good coding challange.",
+        "images" : ["images/3DTransform.png"],
         "live_link": "http://devrob.github.io/3D-transforms/",
         "source_code_link": "https://github.com/DevRob/3D-transforms"
         },
