@@ -75,11 +75,23 @@ var work = {
     // Work experience section.
     "jobs": [
         {
-            "employer": "Goodside Business Solutions",
+            "employer": "DevEire",
             "url": "http://www.goodside.ie/",
+            "location": "Limerick, Ireland",
+            "position": "Front End Developer",
+            "dates": "2019 -",
+            "description": "Front end Developer using HTML, CSS, JS, jQuery, handlebars, less, node.js, gulp, yarn, brew, \
+                            GitHub, Travis CI. Working on several projects mainly with teams from the US(East-West) and Ireland \
+                            across different time zones. Building UI from mockup/Design Spec. and provide options on loosely \
+                            specified project details. Creating customized audience attention tracking solutions. \
+                            Pushing the acquired data to marketing platforms such as zeta and Parse.ly using their API."
+        },
+        {
+            "employer": "Ordorite Software Solutions",
+            "url": "https://www.ordorite.com/",
             "location": "Galway, Ireland",
-            "position": "Software Developer Intern",
-            "dates": "2016 -",
+            "position": "Software Developer",
+            "dates": "2016 - 2019",
             "description": "End-to-end feature development for custom ERP system using JavaScript, CSS, HTML \
                             front-end, .NET rules engine project and MySQL with complex stored procedures and \
                             transaction. We use GIT and bitbucket for version control."
@@ -89,7 +101,7 @@ var work = {
             "url": "https://www.udacity.com",
             "location": "Montain View (Online), from Ireland",
             "position": "Code Reviewer",
-            "dates": "2015 -",
+            "dates": "2015 - 2017",
             "description": "I review code and projects submitted by Front-End Web Developer Nanodegree students.\
                             I verify if the students follow the specification of the projects and Udacity's Style \
                             Guide in their code. While I review codes and evaluate projects I also give helpful \
