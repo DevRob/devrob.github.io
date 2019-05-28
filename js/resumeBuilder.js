@@ -76,7 +76,7 @@ var work = {
     "jobs": [
         {
             "employer": "DevEire",
-            "url": "http://www.goodside.ie/",
+            "url": "http://www.deveire.com/",
             "location": "Limerick, Ireland",
             "position": "Front End Developer",
             "dates": "2019 -",
