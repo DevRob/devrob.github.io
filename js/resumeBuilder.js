@@ -250,8 +250,8 @@ var projects = {
         "images" : [
         "images/Asteroid2.png"
         ],
-        "live_link": "http://www.codeskulptor.org/#user40_VcUZGPuxbtBifOB.py",
-        "source_code_link": "http://www.codeskulptor.org/#user40_VcUZGPuxbtBifOB.py"
+        "live_link": "https://py3.codeskulptor.org/#user308_ydj6LNsNpv_12.py",
+        "source_code_link": "https://py3.codeskulptor.org/#user308_ydj6LNsNpv_12.py"
       }
     ]
 }
