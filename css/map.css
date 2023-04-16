@@ -1,0 +1,19 @@
+#map {
+  display: block;
+  height: 100%;
+  width: 70vw;
+  margin: 0 auto;
+  z-index: -1;
+  /* box-shadow: 6px 7px 9px 3px #0000006e; */
+}
+
+#mapDiv {
+  height: 400px;
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  #mapDiv {
+    height: 600px;
+  }
+}

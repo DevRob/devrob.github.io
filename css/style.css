@@ -1,68 +1,19 @@
-* {
-  padding:0;
-  margin:0;
-  font-family: 'Lora', serif;
-  font-size: 18px;
-}
+@import "global.css";
+@import "project.css";
+@import "map.css";
 
-#main {
-
-}
 .clearfix {
   overflow: auto;
 }
 
-.education-entry, .work-entry, .project-entry {
-  padding-left: 7%;
-  padding-right: 5%;
-  padding-bottom: 5px;
+.education-entry,
+.work-entry,
+.project-entry {
+  padding-bottom: 10px;
 }
 
-hr {
-    margin-top: 5px;
-    background-color: grey;
-    height: 1px;
-}
-
-h1 {
-  font-size: 30px;
-  font-weight: 800;
-  color: #dfe3ee;
-  line-height: 48px;
-  text-align: center;
-}
-
-h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999999;
-  line-height: 29px;
-  padding: 10px;
-}
-
-h3 {
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 20px;
-  color: #999999;
-  line-height: 22px;
-}
-
-h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4A4A4A;
-  line-height: 17px;
-}
-
-h2, h4, h5 {
-  margin: 10px;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-#workExperience-header > h2 {
-    padding-left: 57px;
+#workExperience-header>h2 {
+  padding-left: 57px;
 }
 
 .date-text {
@@ -81,72 +32,21 @@ h2, h4, h5 {
   float: right;
 }
 
-p {
-  font-size: 16px;
-  color: #333333;
-  line-height: 21px;
-  margin-bottom: 15px;
-}
-
-a {
-  text-decoration: none;
-  margin-top: 15px;
-  color: #658aaf; /*#4A95C4*/
-  font-weight: 600;
-}
-
 .welcome-message {
   font-size: 25px;
   color: #dfe3ee;
   line-height: 28px;
   margin-left: 10px;
   line-height: 30px;
+  display: inline-block;
 }
 
-#skillsH3 {
-  color: white;
-  display: none;
-  font-family: inherit;
-}
-
-.orange {
-/*  background-color: orange;*/
-}
-
-.blue-text {
-  color: #4A95C4;
-  font-weight: 600;
-}
-
-.lightblue-text {
-  color: #4A95C4;
-}
-
-.gray {
-  background-color: #F3F3F3;
-  padding-bottom: 10px;
-  clear:both;
-}
-
-.dark-gray {
-/*  background-color: #4A4A4A;*/
-}
-
-/* TODO: Replace with image later */
 #header {
-    /*background-color: white;
-    background: #484848 url("header3.jpg") no-repeat fixed center;
-    background-size: cover;*/
-    overflow:hidden;
-    background: #1b5288;
-    background: -moz-linear-gradient(left, #1b5288 0%, #316294 28%, #698db1 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #1b5288), color-stop(28%, #316294), color-stop(100%, #698db1));
-    background: -webkit-linear-gradient(left, #1b5288 0%, #316294 28%, #698db1 100%);
-    background: -o-linear-gradient(left, #1b5288 0%, #316294 28%, #698db1 100%);
-    background: -ms-linear-gradient(left, #1b5288 0%, #316294 28%, #698db1 100%);
-    background: linear-gradient(to right, #1b5288 0%, #316294 28%, #698db1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5288', endColorstr='#698db1', GradientType=1 );
-
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  padding: 20px 0;
 }
 
 .flex-box {
@@ -154,61 +54,32 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: flex-end;
   padding: 10px;
 }
 
-.center-content {
-  padding-top: 1%;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  list-style-type: none;
-  padding: 3px;
-}
-
-.biopic {
-  width: 150px;
-  height: 150px;
-  display: none;
-  border-radius: 10%;
-  box-shadow: 5px 5px 2px black;
-  margin-left: auto;
-  margin-right: auto;
-}
 .logo {
-  width: 68px;
+  width: auto;
   height: 30px;
   float: right;
-}
-
-.project-img {
-  width: 15%;
-  height: 15%;
 }
 
 .container {
   max-width: 1200px;
   position: center;
-  background-color: white;
 }
+
 .school-container {
   display: block;
 }
 
 img {
-    width: 220px;
-    height: 220px;
-    margin: 5px;
-    border-radius: 8%;
+  width: 220px;
+  height: 220px;
+  margin: 5px;
+  border-radius: 8%;
 }
-/* Bar chart stuff */
+
 .chart div {
   font: 10px sans-serif;
   background-color: #4A4A4A;
@@ -225,14 +96,21 @@ img {
 }
 
 .row {
-    max-height:500px;
+  max-height: 500px;
 }
+
 span {
   color: #eeba30;
   padding: 5px;
 }
 
-#letsConnect {
+.main {
+  background-size: contain;
+  background-image: url(/images/background_lines.png);
+  background-repeat: no-repeat;
+}
+
+#social {
   text-align: center;
 }
 
@@ -246,62 +124,56 @@ span {
 }
 
 #sort-button {
-    width: 100px;
-    margin: 20px;
-    background-color: #428bca;
-    border-color: #357ebd;
-    border-radius:4px;
-    color: #F6E1FF;
+  width: 100px;
+  margin: 20px;
+  background-color: #428bca;
+  border-color: #357ebd;
+  border-radius: 4px;
+  color: #F6E1FF;
 }
 
-@media only screen and (max-width: 1024px) {
-  #letsConnect {
-    margin-top: 5%;
-  }
-  .logo {
-    display: none;
-  }
-  li {
-    display: block;
-    text-align: left;
-  }
-}
-
-@media only screen and (max-width:900px) {
-  .biopic {
-    width: 100px;
-    height: 100px;
-  }
-}
-
-@media only screen and (max-width: 750px) {
-  #letsConnect {
-    margin-top: 10%;
-  }
-  .biopic {
-    width: 150px;
-  }
-  .welcome-message {
-    display: none;
-  }
-}
-
-#map {
-  display: block;
-  height: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#mapDiv {
-  height: 400px;
-  width: 100%;
-  padding-bottom: 5%;
-}
-
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 768px) {
   #skillsH3,
   .biopic {
     display: block;
   }
+
+  #social {
+    margin-top: 10%;
+  }
+
+  .biopic {
+    width: 150px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  #social {
+    margin-top: 5%;
+  }
+
+  li {
+    display: block;
+    text-align: left;
+  }
+
+  .biopic {
+    width: 100px;
+    height: 100px;
+  }
+
+  #header[data-scroll='true'] .nav-item {
+    min-width: 0;
+  }
+
+  .nav-item {
+    display: block;
+    text-align: left;
+    min-width: calc(100% / 4);
+    transition: min-width 0.5s ease-in-out;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+
 }
