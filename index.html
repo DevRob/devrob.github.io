@@ -1,83 +1,42 @@
 <!DOCTYPE html>
-<head>'
+<head>
   <meta charset="utf-8">
-  <title>Resume</title>
+  <title>Molnar</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <script src="js/jQuery.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/mapSettings.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEZnkQnJEjQUyWo9EReZXvGtv7o2c63dM&libraries=places"></script>
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  <main id="main">
-    <!-- ul tag for the top contacts -->
-    <ul id="topContacts" class='flex-box'></ul>
   <header id="header" class="center-content clearfix">
-    <div id="header-row1" class='row'>
-      <span id="role" class="col-md-12"></span>
-    </div>
-    <section id="header-row2" class='row'>
-      <header id="header-left" class="col-md-2">
-        <span id="biopic"></span>
-        <span id="name"></span>
-      </header>
-      <span id="skills" class="col-md-2"></span>
-      <span id="right-header" class="col-md-8"></span>
-    </section>
+    <nav>
+      <ul id="navigation" class='flex-box'></ul>
+    </nav>
   </header>
-  <section class='container'>
-    <div style='clear: both;'></div>
-    <article id="workExperience" class='gray'>
-      <div id="workExperience-row" class="row">
-          <div id="workExperience-header" class="col-md-4">
-          <h2>Work Experience</h2>
-        </div>
-        <div id="workExperience-button" class="col-md-4"></div>
-      </div>
-    </article>
-    <article id="projects">
-      <h2>Projects</h2>
-    </article>
-    <article id="education" class='gray'>
-      <h2>Education</h2>
-    </article>
+  <main id="main">
+    <section class='container'>
+      <div style='clear: both;'></div>
+      <article id="workExperience" class='gray'></article>
+      <article id="projects"></article>
+      <article id="education" class='gray'></article>
+    </section>
+    
     <section id="mapDiv">
       <h2>Where I've Lived and Worked</h2>
     </section>
-  </section>
-    <div id="letsConnect" class='dark-gray'>
+    <div id="social" class='dark-gray'>
       <h2 class='orange center-text'></h2>
-        <ul id="footerContacts" class="flex-box">
+      <ul id="footerContacts" class="footerContacts">
       </ul>
     </div>
-</main>
-  <!-- The helper.js contains Template HTML strings and JScript code to provide a Template Resume for the personal info in resumeBuilder.js -->
+  </main>
   <script src="js/helper.js"></script>
   <script src="js/resumeBuilder.js"></script>
-  <script type="text/javascript">
-
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('topContacts').style.display = 'none';
-    }
-    if(document.getElementsByTagName('h1').length === 0) {
-      document.getElementById('header').style.display = 'none';
-    }
-    if(document.getElementsByClassName('work-entry').length === 0) {
-      document.getElementById('workExperience').style.display = 'none';
-    }
-    if(document.getElementsByClassName('project-entry').length === 0) {
-      document.getElementById('projects').style.display = 'none';
-    }
-    if(document.getElementsByClassName('education-entry').length === 0) {
-      document.getElementById('education').style.display = 'none';
-    }
-    if(document.getElementsByClassName('flex-item').length === 0) {
-      document.getElementById('letsConnect').style.display = 'none';
-    }
-    if(document.getElementById('map') === null) {
-      document.getElementById('mapDiv').style.display = 'none';
-    }
-  </script>
 </body>
 </html>
