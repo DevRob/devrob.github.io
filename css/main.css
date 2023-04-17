@@ -43,11 +43,7 @@ ul {
     -webkit-margin-end: 0px;
     -webkit-padding-start: 40px;
 }
-/* ------------------- class style ------------------- */
-.container {
-    max-width: 1024px;
-    max-height: 885px;
-}
+
 .row {
     height: 128px;
     padding: 50px;

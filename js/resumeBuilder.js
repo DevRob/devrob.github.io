@@ -6,7 +6,7 @@ navigation.display = function() {
         },
         {
             title: "bettering",
-            anchor: "#bettering"
+            anchor: "#education"
         },
         {
             title: "work",
@@ -38,7 +38,7 @@ bio.display = function () {
     for (skill in bio.skills) {
         $("#skillsH3").append(HTMLskills.replace("%data%", bio.skills[skill]))
     }
-    $("#right-header").append(HTMLWelcomeMsg.replace("%data%", bio.welcome_msg))
+    $("#welcome").append(HTMLWelcomeMsg.replace("%data%", bio.welcome_msg))
 }
 
 work.display = function () {
@@ -57,7 +57,8 @@ work.display = function () {
 }
 
 projects.display = function () {
-    let projectArticle = $("#projects").append(HTMLprojectSectionTitle)
+    $("#projects .lead-content").append(HTMLprojectSectionTitle)
+    let projectArticle = $(".project-entries")
     for (project in projects.projects) {
         let projectTitle = HTMLprojectTitle
         let projectCode = HTMLprojectSourceCodeLink
@@ -76,7 +77,6 @@ projects.display = function () {
         }
 
         url = HTMLh3Start + projectTitle + projectCode
-
         projectArticle.append(HTMLprojectStart)
         $(".project-entry:last").append(url.replace("%data%", projects.projects[project].title))
         $(".project-entry:last").append('<div class="project-card-container"></div>')
@@ -93,9 +93,9 @@ projects.display = function () {
 }
 
 education.display = function () {
-    let educationArticle = $("#education").append(HTMLschoolSectionTitle)
+    $("#education .lead-content").append(HTMLschoolSectionTitle)
     for (school in education.schools) {
-        educationArticle.append(HTMLschoolStart)
+        $("#education").append(HTMLschoolStart)
         let url = HTMLh3Start + HTMLschoolName.replace("#", education.schools[school].url)
         let title = url.replace("%data%", education.schools[school].name) + HTMLschoolDegree.replace("%data%", education.schools[school].degree)
         $(".education-entry:last").append(title)

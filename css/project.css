@@ -1,5 +1,19 @@
+.project-lead {
+  background: linear-gradient(0deg, rgba(54,54,54,1) 0%, rgba(43,59,56,1) 50%, rgba(43,59,56,1) 100%);
+}
+
+.project-entries {  
+  background-color: var(--dark-grey);
+}
+
 .project-entry {
+  max-width: 1000px;
   margin: 40px auto;
+}
+
+#projects {
+  padding-bottom: 60px;
+  background-color: var(--dark-grey);
 }
 
 .project-entry:nth-child(2n+1) .project-card-container {

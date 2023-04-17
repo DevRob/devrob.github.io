@@ -9,7 +9,7 @@ let HTMLblog = '<li class="flex-item"><span class="blue-text">blog</span><span c
 let HTMLlocation = '<li class="flex-item"><span class="blue-text">location</span><span class="lightblue-text">%data%</span></li>'
 
 let HTMLbioPic = '<img src="%data%" class="biopic">'
-let HTMLWelcomeMsg = '<div class="welcome-message">%data%</div>'
+let HTMLWelcomeMsg = '<h1 class="welcome-message">%data%</h1>'
 
 let HTMLskillsStart = '<h3 id="skillsH3">I&apos;m good with these:</h3><ul id="skills" class="flex-box"></ul>'
 let HTMLskills = '<li class="flex-item"><span>%data%</span></li>'

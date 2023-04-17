@@ -1,6 +1,7 @@
 :root {
   --dark-grey: #363636;
   --darker-grey: #292929;
+  --dark-green: #2B3B38;
 }
 
 * {
@@ -10,6 +11,10 @@
   font-size: 16px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 hr {
     margin-top: 5px;
     background-color: grey;
@@ -17,9 +22,9 @@ hr {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 42px;
   font-weight: 800;
-  color: #dfe3ee;
+  color: #fff;
   line-height: 48px;
   text-align: center;
 }
@@ -27,7 +32,7 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999999;
+  color: #fff;
   line-height: 29px;
   padding: 10px 0;
 }
@@ -36,14 +41,14 @@ h3 {
   font-family: inherit;
   font-weight: bold;
   font-size: 20px;
-  color: #999999;
+  color: #fff;
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4A4A4A;
+  color: #fff;
   line-height: 17px;
 }
 
@@ -74,8 +79,12 @@ a {
   font-weight: 600;
 }
 
+a, a:hover {
+  color: #fff;
+}
+
 body {
-  background-color: var(--dark-grey);
+  background-color: var(--dark-green);
 }
 
 .h3-container {

@@ -9,6 +9,8 @@
 .education-entry,
 .work-entry,
 .project-entry {
+  max-width: 1000px;
+  margin: 40px auto;
   padding-bottom: 10px;
 }
 
@@ -33,11 +35,8 @@
 }
 
 .welcome-message {
-  font-size: 25px;
-  color: #dfe3ee;
-  line-height: 28px;
-  margin-left: 10px;
-  line-height: 30px;
+  width: 100%;
+  padding-top: 80px;
   display: inline-block;
 }
 
@@ -62,11 +61,6 @@
   width: auto;
   height: 30px;
   float: right;
-}
-
-.container {
-  max-width: 1200px;
-  position: center;
 }
 
 .school-container {
@@ -167,13 +161,19 @@ span {
   }
 
   .nav-item {
-    display: block;
+    display: block; 
     text-align: left;
+    text-align: center;
     min-width: calc(100% / 4);
     transition: min-width 0.5s ease-in-out;
   }
 }
 
 @media only screen and (min-width: 1240px) {
-
+  .lead-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 100px 200px;
+    color: lightgrey;
+  }
 }
