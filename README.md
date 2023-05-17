@@ -1,8 +1,6 @@
-## Resources used for this project.
+## New Portfolio Site built with NextJS & TypeScript.
 
-- wikipedia.org
-- w3schools.com
-- wallpaperswide.com
-- color-hex.com
+[Portfolio](https://nextjs-git-develop-devrob.vercel.app/)
 
+![](https://devrob.github.io/nextjs/public/png/Portfolio.png)
 
