@@ -2,54 +2,22 @@
 <head>
   <meta charset="utf-8">
   <title>Molnar</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <script src="js/jQuery.js"></script>
-  <script src="js/data.js"></script>
-  <script src="js/mapSettings.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEZnkQnJEjQUyWo9EReZXvGtv7o2c63dM&libraries=places"></script>
+  <link href="./styles.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="./favicon.ico">
   <meta name="viewport" content="width=device-width">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://kit.fontawesome.com/a3627df7b0.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header id="header" class="center-content clearfix">
-    <nav>
-      <ul id="navigation" class="flex-box"></ul>
-    </nav>
-  </header>
-  <main id="main">
-    <section class="content">
-      <div style="clear: both;"></div>
-      <article id="welcome" class="gray"></article>
-      <article id="projects">
-        <div class="project-lead">
-          <div class="lead-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum.
-          </div>
-        </div>
-        <div class="project-entries"></div>
-      </article>
-      <article id="education" class="gray">
-        <div class="education-lead">
-          <div class="lead-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum.
-          </div>
-        </div>
-      </article>
+  <main class="main-wrapper">
+    <section>
+      <iframe src="https://embed.lottiefiles.com/animation/54673" width="300" height="150"></iframe>
+      <p>I am thrilled to announce the launch of my new portfolio website and invite you to visit here</p>
+      <a aria-label="Portfolio" href="https://nextjs-git-develop-devrob.vercel.app/" target="_self">visit Portfolio<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
     </section>
-    
-    <section id="mapDiv">
-      <h2>Where I"ve Lived and Worked</h2>
-    </section>
-    <div id="social" class="dark-gray">
-      <h2 class="orange center-text"></h2>
-      <ul id="footerContacts" class="footerContacts">
-      </ul>
-    </div>
   </main>
-  <script src="js/helper.js"></script>
-  <script src="js/resumeBuilder.js"></script>
 </body>
 </html>
